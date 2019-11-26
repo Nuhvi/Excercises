@@ -1,3 +1,5 @@
+Test = require('./utils/testSuite');
+
 const maxSlidingWindow = (nums, k) => {
   let dequeue = [],
     maxArr = [];
@@ -20,6 +22,6 @@ const maxSlidingWindow = (nums, k) => {
   return maxArr;
 };
 
-console.log(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3), [ 3, 3, 5, 5, 6, 7 ]);
+Test.assertEquals(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3), [ 3, 3, 5, 5, 6, 7 ]);
 
-console.log(maxSlidingWindow([1, 3, -1, -3, 1, 3, 6, 7], 3), [ 3, 3, 1, 3, 6, 7 ]);
+Test.assertEquals(maxSlidingWindow([1, 3, -1, -3, 1, 3, 6, 7], 3), [ 3, 3, 1, 3, 6, 7 ]);

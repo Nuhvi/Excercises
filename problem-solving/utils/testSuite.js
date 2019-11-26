@@ -16,5 +16,5 @@ const Fail = (LHS, RHS) => {
 };
 
 module.exports = {
-  assertEquals: (LHS, RHS) => (LHS === RHS ? Success() : Fail(LHS, RHS)),
+  assertEquals: (LHS, RHS) => (LHS == RHS ? Success() : Fail(LHS, RHS)),
 };
